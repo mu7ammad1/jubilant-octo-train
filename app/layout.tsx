@@ -1,4 +1,4 @@
-import { Geist } from "next/font/google";
+import { Tajawal } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Nav from "@/components/nav";
@@ -13,9 +13,10 @@ export const metadata = {
   description: "The fastest way to build apps with Next.js and Supabase",
 };
 
-const geistSans = Geist({
+const geistSans = Tajawal({
   display: "swap",
-  subsets: ["latin"],
+  subsets: ["arabic"],
+  weight: ["400"]
 });
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={geistSans.className} suppressHydrationWarning>
-      <body className="bg-background text-foreground">
+      <body className="bg-primary-foreground/50 text-foreground">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -33,7 +34,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="flex flex-col justify-center items-center w-full">
-            <div className="w-full flex flex-col justify-normal items-center max-w-screen-xl min-h-screen">
+            <div className="w-full flex flex-col justify-normal items-center max-w-screen-xl min-h-screen p-3">
               <Nav />
               {children}
             </div>

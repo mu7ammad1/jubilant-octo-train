@@ -21,7 +21,7 @@ export function SearchAndmenu() {
         <Drawer>
             <DrawerTrigger asChild>
                 <Button variant={"ghost"} size={"icon"} className="rounded-full">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="stroke-[1.5] " style={{ scale: 1.3 }}><path d="M3 5L19 5" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round"></path><path d="M3 12H7" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round"></path><circle cx="16" cy="15" r="4" stroke="currentColor"></circle><path d="M19 18L21 20" stroke="currentColor" strokeLinecap="square"></path><path d="M3 19H7" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round"></path></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="stroke-[1.5] " style={{ scale: 1.3 }}><path d="M3 5L19 5" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round"></path><path d="M3 12H7" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round"></path><circle cx="16" cy="15" r="4" stroke="currentColor"></circle><path d="M19 18L21 20" stroke="currentColor" strokeLinecap="square"></path><path d="M3 19H7" stroke="currentColor" strokeLinecap="square" strokeLinejoin="round"></path></svg>
                 </Button>
 
             </DrawerTrigger>

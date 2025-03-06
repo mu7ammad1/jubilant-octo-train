@@ -11,7 +11,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { Button } from "./ui/button"
 import { signOutAction } from "@/app/actions/actions"
 import Link from "next/link"
-import { CookieIcon, LifeBuoyIcon, LogOutIcon, WalletCardsIcon } from "lucide-react"
+import { CookieIcon, LifeBuoyIcon, LogOutIcon, User, WalletCardsIcon } from "lucide-react"
+import { ModeToggle } from "./mode-toggle"
 
 export default function Drop({ avatar }: any) {
     return (
@@ -25,19 +26,21 @@ export default function Drop({ avatar }: any) {
             <DropdownMenuContent className="m-1 mr-3 w-44 rounded-xl border-none bg-secondary *:rounded-xl *:p-0 *:m-0 space-y-1 *:*:justify-normal">
                 <DropdownMenuItem>
                     <Button asChild size={"sm"} variant={"secondary"} className="w-full rounded-xl dark:hover:bg-neutral-700 hover:bg-neutral-200 ">
-                        <Link href="/help-Feedback">
-                            <LifeBuoyIcon className="w-4 h-4 mr-1.5" />
-                            Help & Feedback
+                        <Link href="/pricing">
+                            <WalletCardsIcon className="w-4 h-4 mr-1.5" />
+                            Subscription
                         </Link>
+
                     </Button>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator className="bg-primary/10" />
                 <DropdownMenuItem>
-                <Button asChild size={"sm"} variant={"secondary"} className="w-full rounded-xl dark:hover:bg-neutral-700 hover:bg-neutral-200 ">
-                <Link href="/subscription">
-                            <WalletCardsIcon className="w-4 h-4 mr-1.5" />
-                            Subscription
+                    <Button asChild size={"sm"} variant={"secondary"} className="w-full rounded-xl dark:hover:bg-neutral-700 hover:bg-neutral-200 ">
+                        <Link href="/account">
+                            <User className="w-4 h-4 mr-1.5" />
+                            Account
                         </Link>
+                        {/* <ModeToggle /> */}
                     </Button>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator className="bg-primary/10" />
