@@ -2,6 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
+.bgAndImage {
+  background-image: url("../assets/images/gradientBg.svg");
+  background-color: #000000;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 600px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.gradient {
+	background: linear-gradient(-45deg,
+  #ff5770,
+  #e4428d,
+  #c42da8,
+  #9e16c3,
+  #6501de,
+  #9e16c3,
+  #c42da8,
+  #e4428d,
+  #ff5770);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+
+.box {
+  position: relative;
+}
+.box::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8) translateZ(1);
+  filter: blur(15px);
+  background: linear-gradient(
+    to left,
+    #ff5770,
+    #e4428d,
+    #c42da8,
+    #9e16c3,
+    #6501de,
+    #9e16c3,
+    #c42da8,
+    #e4428d,
+    #ff5770
+  );
+  background-size: 200% 200%;
+  animation: animateGlow 1.25s linear infinite;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

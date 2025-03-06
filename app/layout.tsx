@@ -26,14 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={geistSans.className} suppressHydrationWarning>
-      <body className="bg-primary-foreground/50 text-foreground">
+      <body className="bg-primary-foreground text-foreground ">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex flex-col justify-center items-center w-full">
+          <main className="flex flex-col justify-center items-center w-full ">
             <div className="w-full flex flex-col justify-normal items-center max-w-screen-xl min-h-screen p-3">
               <Nav />
               {children}

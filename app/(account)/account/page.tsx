@@ -18,15 +18,15 @@ export default function PricingComparison() {
           <div className="space-y-2 mb-8">
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">2,700 images (2 point per image).</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">26 4K videos (50 points per video, totaling 1,300 points).</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">Basic email support.</span>
             </div>
           </div>
 
