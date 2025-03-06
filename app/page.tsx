@@ -36,64 +36,6 @@ export default function HomeScreen() {
           </div>
         </div>
       </section>
-      <div className="flex justify-center items-center w-full">
-        <section className="w-full *:w-96 *:h-40 flex flex-wrap justify-center gap-5 *:bg-secondary/50">
-          <Link href={'/'} className="flex gap-3 w-full rounded-2xl">
-            <Image alt="D3" src={D3} className="w-1/3 h-full rounded-s-2xl" />
-            <div className="w-2/3 space-y-2">
-              <h3 className="text-2xl font-semibold tracking-wide">3D Isomertic</h3>
-              <p className="text-sm font-thin tracking-widest">Vibrant and minimalist 3D origami.</p>
-              <Button variant={"secondary"} size={"sm"} className="py-0.5 px-5 rounded-full">Try</Button>
-            </div>
-          </Link>
-
-          <Link href={'/'} className="flex gap-3 w-full rounded-2xl">
-            <Image alt="D3" src={D3} className="w-1/3 h-full rounded-s-2xl" />
-            <div className="w-2/3 space-y-2">
-              <h3 className="text-2xl font-semibold tracking-wide">3D Isomertic</h3>
-              <p className="text-sm font-thin tracking-widest">Vibrant and minimalist 3D origami.</p>
-              <Button variant={"secondary"} size={"sm"} className="py-0.5 px-5 rounded-full">Try</Button>
-            </div>
-          </Link>
-
-          <Link href={'/'} className="flex gap-3 w-full rounded-2xl">
-            <Image alt="D3" src={D3} className="w-1/3 h-full rounded-s-2xl" />
-            <div className="w-2/3 space-y-2">
-              <h3 className="text-2xl font-semibold tracking-wide">3D Isomertic</h3>
-              <p className="text-sm font-thin tracking-widest">Vibrant and minimalist 3D origami.</p>
-              <Button variant={"secondary"} size={"sm"} className="py-0.5 px-5 rounded-full">Try</Button>
-            </div>
-          </Link>
-
-          <Link href={'/'} className="flex gap-3 w-full rounded-2xl">
-            <Image alt="D3" src={D3} className="w-1/3 h-full rounded-s-2xl" />
-            <div className="w-2/3 space-y-2">
-              <h3 className="text-2xl font-semibold tracking-wide">3D Isomertic</h3>
-              <p className="text-sm font-thin tracking-widest">Vibrant and minimalist 3D origami.</p>
-              <Button variant={"secondary"} size={"sm"} className="py-0.5 px-5 rounded-full">Try</Button>
-            </div>
-          </Link>
-
-          <Link href={'/'} className="flex gap-3 w-full rounded-2xl">
-            <Image alt="D3" src={D3} className="w-1/3 h-full rounded-s-2xl" />
-            <div className="w-2/3 space-y-2">
-              <h3 className="text-2xl font-semibold tracking-wide">3D Isomertic</h3>
-              <p className="text-sm font-thin tracking-widest">Vibrant and minimalist 3D origami.</p>
-              <Button variant={"secondary"} size={"sm"} className="py-0.5 px-5 rounded-full">Try</Button>
-            </div>
-          </Link>
-
-          <Link href={'/'} className="flex gap-3 w-full rounded-2xl">
-            <Image alt="D3" src={D3} className="w-1/3 h-full rounded-s-2xl" />
-            <div className="w-2/3 space-y-2">
-              <h3 className="text-2xl font-semibold tracking-wide">3D Isomertic</h3>
-              <p className="text-sm font-thin tracking-widest">Vibrant and minimalist 3D origami.</p>
-              <Button variant={"secondary"} size={"sm"} className="py-0.5 px-5 rounded-full">Try</Button>
-            </div>
-          </Link>
-
-        </section>
-      </div>
 
       {/* <Footer /> */}
     </div>
