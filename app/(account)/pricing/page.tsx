@@ -4,7 +4,7 @@ import { Check } from "lucide-react"
 export default function PricingComparison() {
   return (
     <div className="flex items-center justify-center min-h-screen w-full p-4">
-      <div className="bg-secondary rounded-3xl p-12 w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 gradient box">
+      <div className="bg-secondary text-primary rounded-3xl p-12 w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 gradient box">
         <div className="flex flex-col">
           <div className="mb-6">
             <h2 className="text-4xl font-bold border-b border-primary/40 border-dashed border-spacing-10 pb-3">
