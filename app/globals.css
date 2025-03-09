@@ -38,6 +38,26 @@
 }
 
 
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+
 .box {
   position: relative;
 }
@@ -76,6 +96,9 @@
     background-position: 200% 50%;
   }
 }
+
+
+
 
 @layer base {
   :root {

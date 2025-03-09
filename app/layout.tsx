@@ -1,4 +1,4 @@
-import { Tajawal } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Nav from "@/components/nav";
@@ -19,10 +19,10 @@ export const metadata = {
   },
 };
 
-const geistSans = Tajawal({
+const geistSans = Inter({
   display: "swap",
-  subsets: ["arabic"],
-  weight: ["400"]
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({
