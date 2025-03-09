@@ -1,16 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, DicesIcon } from "lucide-react";
+import { ArrowRightIcon, DicesIcon, PopcornIcon } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
-import Footer from "@/components/footer";
 import PinterestGrid from "@/components/PinterestGrid";
 
 
 export default function HomeScreen() {
   return (
-    <div className="w-full flex flex-col gap-20 justify-around items-center min-h-screen">
-      <section className="flex flex-col justify-center items-center w-full min-h-52 gap-10">
-        <h1 className="tracking-wider text-4xl md:text-3xl font-medium text-center">
-          What can I help you ship?
+    <div className="w-full flex flex-col gap-5 justify-around items-center min-h-screen">
+      <section className="flex flex-col justify-center items-center w-full min-h-96 gap-10 space-y-10 my-10">
+        <h1 className="tracking-wider text-4xl max-md:text-2xl text-center font-extrabold">
+          Let Your Imagination Fly!
         </h1>
         <div className="flex flex-col w-full max-w-2xl items-center border p-2 rounded-3xl bg-neutral-100 placeholder:text-black dark:bg-secondary border-none box">
           <Textarea
@@ -36,15 +35,11 @@ export default function HomeScreen() {
         </div>
       </section>
 
-      <section>
-        <div>
-          <div></div>
-        </div>
-      </section>
 
 
+      <h1 className="flex justify-start items-center w-full text-3xl space-x-3"><PopcornIcon absoluteStrokeWidth /><span>Style</span></h1>
 
-    <PinterestGrid />
+      <PinterestGrid />
 
       {/* <Footer /> */}
     </div>

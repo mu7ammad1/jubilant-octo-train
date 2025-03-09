@@ -57,7 +57,7 @@ export default async function AuthButton() {
     );
   }
   return user ? (
-    <div className="flex items-center gap-4 bg-background/30 backdrop-blur-md px-2 rounded-full">
+    <div className="flex items-center gap-4 px-2">
       <SearchAndmenu />
       <Drop avatar={avatar} />
     </div>
