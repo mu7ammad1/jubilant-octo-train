@@ -12,7 +12,6 @@ import { Button } from "./ui/button"
 import { signOutAction } from "@/app/actions/actions"
 import Link from "next/link"
 import { CookieIcon, LifeBuoyIcon, LogOutIcon, User, WalletCardsIcon } from "lucide-react"
-import { ModeToggle } from "./mode-toggle"
 
 export default function Drop({ avatar }: any) {
     return (

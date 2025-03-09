@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { createClient } from "@/utils/supabase/server";
-import { ModeToggle } from "./mode-toggle";
 import { SearchAndmenu } from "./SearchAndmenu";
 import Drop from "./Drop";
 
