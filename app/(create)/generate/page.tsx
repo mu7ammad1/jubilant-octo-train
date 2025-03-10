@@ -11,11 +11,7 @@ export default function NewScreen() {
     <main className="w-full flex justify-center relative">
       <main className="flex flex-col justify-between items-center max-w-2xl">
         <section className="h-full w-full">
-          <main className="grid grid-cols-2 max-md:grid-cols-1 gap-2 *:h-52 *:object-cover *:rounded-xl items-center justify-between mb-32">
-            <Image
-              alt='name'
-              src={Img}
-            />
+          <main className="flex flex-wrap max-sm:grid max-sm:grid-cols-2 gap-2 *:h-40 *:w-64 *:object-cover *:rounded-xl items-center justify-end mb-32">
             <Image
               alt='name'
               src={Img1}

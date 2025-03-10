@@ -39,9 +39,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="flex flex-col justify-center items-center w-full ">
+          <main className="flex flex-col justify-center items-center w-full">
             <Nav />
-            <div className="w-full flex flex-col justify-normal items-center max-w-screen-xl min-h-screen p-3">
+            <div className="w-full flex flex-col justify-normal items-center max-w-screen-xl min-h-screen p-3 ">
               {children}
             </div>
             
