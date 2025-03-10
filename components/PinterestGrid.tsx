@@ -68,7 +68,7 @@ export default function PinterestGrid() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="w-full columns-2 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
+    <div className="w-full columns-2 sm:columns-2 md:columns-2 lg:columns-4 gap-4">
       {images.map((image, index) => (
         <div
           key={index}

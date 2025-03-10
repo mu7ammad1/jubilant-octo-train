@@ -7,7 +7,7 @@ import PinterestGrid from "@/components/PinterestGrid";
 export default function HomeScreen() {
   return (
     <div className="w-full flex flex-col gap-5 justify-around items-center min-h-screen">
-      <section className="flex flex-col justify-center items-center w-full min-h-96 gap-10 space-y-10 my-10">
+      <section className="flex flex-col justify-center items-center w-full min-h-[60vh] gap-10">
         <h1 className="leading-loose tracking-wider text-6xl max-md:text-3xl text-center font-black bg-gradient-to-r from-clr-1 via-clr-2 to-clr-4 bg-clip-text text-transparent animate-gradient">
           Let Your Imagination Fly!
         </h1>
@@ -35,6 +35,10 @@ export default function HomeScreen() {
         </div>
       </section>
 
+      <div className="fixed -top-20 -left-20 -z-10 size-80 rounded-full blur-3xl bg-gradient-to-r from-clr-1/80 to-clr-4/80" />
+
+      <div className="fixed -bottom-20 -right-20 -z-10 size-80 rounded-full blur-3xl bg-gradient-to-r from-clr-3/80 to-clr-4/80" />
+      <div className="fixed -top-32 right-52 -z-10 size-52 rounded-full blur-3xl bg-gradient-to-r from-clr-2/80 to-clr-3/80" />
 
 
       <h1 className="flex justify-start items-center w-full text-3xl space-x-3"><PopcornIcon absoluteStrokeWidth /><span>Style</span></h1>
