@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.bgAndImage {
-  background-image: url("../assets/images/gradientBg.svg");
-  background-color: #000000;
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 600px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;

@@ -24,8 +24,7 @@ export default function DialogAuthUp() {
             <DialogTrigger asChild>
                 <Button size="default" variant={"default"} className="rounded-full">Sign up for Free</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-md max-sm:min-h-full border">
-                <div className="fixed top-5 left-5 max-sm:right-0 -z-10 size-20 rounded-full blur-3xl bg-gradient-to-r from-clr-1/70 to-clr-3/70" />
+            <DialogContent className="sm:max-w-md max-sm:min-h-full border bg-gradient-to-b from-clr-4/80 to-white/0 backdrop-blur-3xl rounded-2xl p-8">
                 <DialogHeader>
                     <DialogTitle className="text-2xl font-medium">Sign up</DialogTitle>
                     <DialogDescription>
@@ -38,7 +37,7 @@ export default function DialogAuthUp() {
                 <ElementSignIn />
                 <DialogFooter className="sm:justify-start absolute top-5 right-5">
                     <DialogClose asChild>
-                        <Button type="button" size={"icon"} variant="secondary" className="rounded-full">
+                        <Button type="button" size={"icon"} variant="default" className="rounded-full">
                             <X className="h-4 w-4" />
                         </Button>
                     </DialogClose>
