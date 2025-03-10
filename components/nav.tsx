@@ -17,15 +17,18 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className='flex justify-center items-center gap-3 max-sm:hidden'>
-                   <Button variant='ghost' size='sm' className='rounded-full hover:bg-primary hover:text-primary-foreground'>
-                    <Link href='/generate'>Generate</Link>
-                   </Button>
-                   <Button variant='ghost' size='sm' className='rounded-full hover:bg-primary hover:text-primary-foreground'>
-                    <Link href='/explore'>Explore</Link>
-                   </Button>
-                   <Button variant='ghost' size='sm' className='rounded-full hover:bg-primary hover:text-primary-foreground'>
-                    <Link href='/pricing'>Pricing</Link>
-                   </Button>
+                    <Button variant='ghost' size='sm' className='rounded-full hover:bg-primary hover:text-primary-foreground'>
+                        <Link href='/generate'>Generate</Link>
+                    </Button>
+                    <Button variant='ghost' size='sm' className='rounded-full hover:bg-primary hover:text-primary-foreground'>
+                        <Link href='/explore'>Explore</Link>
+                    </Button>
+                    <Button variant='ghost' size='sm' className='rounded-full hover:bg-primary hover:text-primary-foreground'>
+                        <Link href='/pricing'>Pricing</Link>
+                    </Button>
+                    <Button variant='ghost' size='sm' className='rounded-full hover:bg-primary hover:text-primary-foreground'>
+                        <Link href='/pricing'>Donload app</Link>
+                    </Button>
                 </div>
                 {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
             </div>

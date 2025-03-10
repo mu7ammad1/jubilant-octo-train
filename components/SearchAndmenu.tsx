@@ -14,6 +14,7 @@ import {
     DrawerTrigger,
 } from "@/components/ui/drawer"
 import { CoinsIcon, X } from "lucide-react"
+import Link from "next/link"
 
 
 export function SearchAndmenu() {
@@ -28,13 +29,22 @@ export function SearchAndmenu() {
             <DrawerContent className="max-h-[85vh] w-full">
                 <div className="mx-auto w-full h- flex flex-col max-w-md gap-0 p-4">
                     <DrawerHeader>
-                        <DrawerTitle className="flex justify-normal items-start gap-2"><CoinsIcon className="w-4 h-4" /> 0/60 coins</DrawerTitle>
+                        <DrawerTitle className="flex justify-normal items-start gap-2"><CoinsIcon className="w-4 h-4" /> 0/200 coins</DrawerTitle>
                         <DrawerDescription className="flex justify-normal items-start">Set your daily activity goal.</DrawerDescription>
                     </DrawerHeader>
                     <div className="px-4 pb-0 sm:hidden flex justify-normal items-start flex-col">
-                        <Button variant={"ghost"} size={"default"} className={`rounded-full`}>Generate</Button>
-                        <Button variant={"ghost"} size={"default"} className={`rounded-full`}>Explore</Button>
-                        <Button variant={"ghost"} size={"default"} className={`rounded-full`}>Pricing</Button>
+                        <Button variant={"ghost"} size={"default"} className={`rounded-full`}>
+                            <Link href='/generate'>Generate</Link>
+                        </Button>
+                        <Button variant={"ghost"} size={"default"} className={`rounded-full`}>
+                            <Link href='/explore'>Explore</Link>
+                        </Button>
+                        <Button variant={"ghost"} size={"default"} className={`rounded-full`}>
+                            <Link href='/pricing'>Pricing</Link>
+                        </Button>
+                        <Button variant={"ghost"} size={"default"} className={`rounded-full`}>
+                            <Link href='/pricing'>Donload app</Link>
+                        </Button>
                     </div>
                 </div>
             </DrawerContent>
