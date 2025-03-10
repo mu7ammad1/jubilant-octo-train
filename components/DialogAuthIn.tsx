@@ -18,24 +18,14 @@ import { X } from "lucide-react"
 
 
 
-const AuthData = [
-    {
-        "DialogTrigger": "Sign in",
-        "DialogTitle": `Sign in`,
-
-    },
-
-]
-
-
-
-export function DialogAuth() {
+export function DialogAuthIn() {
     return (
         <Dialog>
             <DialogTrigger asChild>
                 <Button size="default" variant={"secondary"} className="rounded-full">Sign in</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-md border-none">
+            <DialogContent className="sm:max-w-md max-sm:min-h-full border">
+                <div className="fixed top-5 left-5 max-sm:right-0 -z-10 size-20 rounded-full blur-3xl bg-gradient-to-r from-clr-1/70 to-clr-3/70" />
                 <DialogHeader>
                     <DialogTitle className="text-2xl font-medium">Sign in</DialogTitle>
                     <DialogDescription>

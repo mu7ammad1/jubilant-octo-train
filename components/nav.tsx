@@ -7,7 +7,7 @@ import ima from '@/assets/images/logoR.svg'
 
 export default function Nav() {
     return (
-        <nav className=' w-full backdrop-blur-md sticky top-0 z-50 flex justify-center'>
+        <nav className=' w-full bg-white/0 backdrop-blur-md sticky top-0 z-50 flex justify-center'>
             <div className='flex justify-between items-center w-full px-3 py-2 max-w-screen-xl'>
                 <div>
                     <Link href="/" className={`text-2xl flex gap-3 justify-start items-center w-full text-neutral-800 dark:text-neutral-100 font-semibold px-3 rounded-full`}>

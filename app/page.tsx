@@ -35,10 +35,6 @@ export default function HomeScreen() {
         </div>
       </section>
 
-      <div className="fixed -top-20 -left-20 -z-10 size-80 rounded-full blur-3xl bg-gradient-to-r from-clr-1/80 to-clr-4/80" />
-
-      <div className="fixed -bottom-20 -right-20 -z-10 size-80 rounded-full blur-3xl bg-gradient-to-r from-clr-3/80 to-clr-4/80" />
-      <div className="fixed -top-32 right-52 -z-10 size-52 rounded-full blur-3xl bg-gradient-to-r from-clr-2/80 to-clr-3/80" />
 
 
       <h1 className="flex justify-start items-center w-full text-3xl space-x-3"><PopcornIcon absoluteStrokeWidth /><span>Style</span></h1>

@@ -1,14 +1,16 @@
 import { Button } from "@/components/ui/button"
-import { Check } from "lucide-react"
+import { Check, CoinsIcon } from "lucide-react"
 
 export default function PricingComparison() {
   return (
     <div className="flex items-center justify-center min-h-screen w-full p-4">
       <div className="bg-secondary text-primary rounded-3xl p-12 w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 gradient box">
+
+        {/* Basic Plan */}
         <div className="flex flex-col">
           <div className="mb-6">
             <h2 className="text-4xl font-bold border-b border-primary/40 border-dashed border-spacing-10 pb-3">
-              $9.99 <span className="text-lg font-normal text-primary/70">/month</span>
+              $2.99 <span className="text-lg font-normal text-primary/70">/week</span>
             </h2>
             <h3 className="text-2xl font-semibold mt-4">Basic Plan</h3>
             <p className="text-primary/70 mt-2">Unleash the Power of Imagination!</p>
@@ -16,16 +18,28 @@ export default function PricingComparison() {
 
           <div className="space-y-2 mb-8">
             <div className="flex justify-start gap-3 items-center">
-              <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">~3,200 Po</span>
+              <CoinsIcon className="w-4 h-4" />
+              <span className="dark:text-[#e2e2e2]">900 Coin Generation</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited styles Images & Videos</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited Real-Time Photos</span>
+            </div>
+            <div className="flex justify-start gap-3 items-center">
+              <Check className="w-4 h-4" />
+              <span className="dark:text-[#e2e2e2]">Unlimited Enhancer Upscales</span>
+            </div>
+            <div className="flex justify-start gap-3 items-center">
+              <Check className="w-4 h-4" />
+              <span className="dark:text-[#e2e2e2]">Unlimited Hour Video Animation</span>
+            </div>
+            <div className="flex justify-start gap-3 items-center">
+              <Check className="w-4 h-4" />
+              <span className="dark:text-[#e2e2e2]">Support +1500 Design</span>
             </div>
           </div>
 
@@ -34,10 +48,11 @@ export default function PricingComparison() {
           </Button>
         </div>
 
+        {/* Pro Plan */}
         <div className="flex flex-col">
           <div className="mb-6">
             <h2 className="text-4xl font-bold border-b border-primary/40 border-dashed border-spacing-10 pb-3">
-              $19 <span className="text-lg font-normal text-primary/70">/month</span>
+              $9.99 <span className="text-lg font-normal text-primary/70">/month</span>
             </h2>
             <h3 className="text-2xl font-semibold mt-4">Pro Plan</h3>
             <p className="text-primary/70 mt-2">Elevate Your Creative Vision!</p>
@@ -45,30 +60,29 @@ export default function PricingComparison() {
 
           <div className="space-y-2 mb-8">
             <div className="flex justify-start gap-3 items-center">
-              <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">~3,200 </span>
+              <CoinsIcon className="w-4 h-4" />
+              <span className="dark:text-[#e2e2e2]">3,000 Coin Generation</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">~1,600 images</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited styles Images & Videos</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">~16 videos</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited Videos</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">~19000 realtime image 1024px</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited Real-Time Photos</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">~180 Enhancer Upscales 2k</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited Enhancer Upscales</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">1 Hour Video Animation</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited Hour Video Animation</span>
             </div>
-
           </div>
 
           <Button variant={"default"} size={"lg"} className="rounded-full mt-auto py-6">
@@ -76,6 +90,7 @@ export default function PricingComparison() {
           </Button>
         </div>
 
+        {/* Enterprise Plan */}
         <div className="flex flex-col">
           <div className="mb-6">
             <h2 className="text-4xl font-bold border-b border-primary/40 border-dashed border-spacing-10 pb-3">
@@ -88,23 +103,23 @@ export default function PricingComparison() {
           <div className="space-y-2 mb-8">
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span>2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">15,000 Coin Generation</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span>2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">Unlimited styles Images & Videos</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">Priority Support</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">Custom Integrations</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">2 Users team</span>
+              <span className="dark:text-[#e2e2e2]">Team Collaboration Tools</span>
             </div>
           </div>
 
@@ -116,4 +131,3 @@ export default function PricingComparison() {
     </div>
   )
 }
-

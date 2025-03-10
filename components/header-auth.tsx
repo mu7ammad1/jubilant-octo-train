@@ -5,7 +5,8 @@ import { Button } from "./ui/button";
 import { createClient } from "@/utils/supabase/server";
 import { SearchAndmenu } from "./SearchAndmenu";
 import Drop from "./Drop";
-import { DialogAuth } from "./DialogCloseButton";
+import { DialogAuthIn } from "./DialogAuthIn";
+import DialogAuthUp from "./DialogAuthUp";
 
 export default async function AuthButton() {
   const supabase = await createClient();
@@ -64,10 +65,8 @@ export default async function AuthButton() {
     </div>
   ) : (
     <div className="flex gap-2">
-      <DialogAuth />
-      <Button asChild size="default" variant={"default"} className="rounded-full">
-        <Link href="/sign-up">Sign up for Free</Link>
-      </Button>
+      <DialogAuthIn />
+      <DialogAuthUp />
     </div>
   );
 }

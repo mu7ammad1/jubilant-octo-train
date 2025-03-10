@@ -44,6 +44,11 @@ export default function RootLayout({
             <div className="w-full flex flex-col justify-normal items-center max-w-screen-xl min-h-screen p-3">
               {children}
             </div>
+            
+            <div className="fixed -top-20 -left-20 -z-10 size-80 rounded-full blur-3xl bg-gradient-to-r from-clr-1/80 to-clr-4/80" />
+            <div className="fixed -bottom-20 -right-20 -z-10 size-80 rounded-full blur-3xl bg-gradient-to-r from-clr-3/80 to-clr-4/80" />
+            <div className="fixed -top-32 right-52 max-sm:right-0 -z-10 size-52 rounded-full blur-3xl bg-gradient-to-r from-clr-2/80 to-clr-3/80" />
+
           </main>
         </ThemeProvider>
       </body>
