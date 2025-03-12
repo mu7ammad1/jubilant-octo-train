@@ -201,7 +201,7 @@ export default function HeadSearch() {
                                     <CommandInput placeholder="Filter Style..." />
                                     <CommandList>
                                         <CommandEmpty>No results found.</CommandEmpty>
-                                        <CommandGroup className="*:flex *:flex-wrap *:*:w-3/12 *:gap-0 w-full h-96">
+                                        <CommandGroup className="*:flex *:flex-wrap *:*:w-1/6 *:*:max-md:w-1/4 *:*:max-sm:w-1/3 *:gap-0 w-full h-96">
                                             {statuses.map((status) => (
                                                 <CommandItem
                                                     key={status.Style}
