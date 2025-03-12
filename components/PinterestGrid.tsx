@@ -23,7 +23,7 @@ export default function PinterestGrid() {
         setLoading(true);
         const { data, error } = await supabase
           .from("photos")
-          .select("url");
+          .select("*");
 
         if (error) throw error;
         setImages(data || []);

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Check, CoinsIcon } from "lucide-react"
+import { Check, CoinsIcon, Image, LucideImage, VideoIcon } from "lucide-react"
 
 export default function PricingComparison() {
   return (
@@ -19,11 +19,15 @@ export default function PricingComparison() {
           <div className="space-y-2 mb-8">
             <div className="flex justify-start gap-3 items-center">
               <CoinsIcon className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">900 Coin Generation</span>
+              <span className="dark:text-[#e2e2e2]">1,300 daily Coin Generation</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
-              <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">Unlimited styles Images & Videos</span>
+              <LucideImage className="w-4 h-4" />
+              <span className="dark:text-[#e2e2e2]">Unlimited Generation Images </span>
+            </div>
+            <div className="flex justify-start gap-3 items-center">
+              <VideoIcon className="w-4 h-4" />
+              <span className="dark:text-[#e2e2e2]">Unlimited Generation Videos (video 5s)</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
@@ -61,7 +65,7 @@ export default function PricingComparison() {
           <div className="space-y-2 mb-8">
             <div className="flex justify-start gap-3 items-center">
               <CoinsIcon className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">3,000 Coin Generation</span>
+              <span className="dark:text-[#e2e2e2]">4,500 daily Coin Generation</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
@@ -103,7 +107,7 @@ export default function PricingComparison() {
           <div className="space-y-2 mb-8">
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
-              <span className="dark:text-[#e2e2e2]">15,000 Coin Generation</span>
+              <span className="dark:text-[#e2e2e2]">22,300 daily Coin Generation</span>
             </div>
             <div className="flex justify-start gap-3 items-center">
               <Check className="w-4 h-4" />
