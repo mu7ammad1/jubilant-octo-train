@@ -5,14 +5,6 @@ import { Button } from "./ui/button";
 import { ArrowRightIcon, DicesIcon, Settings2Icon } from "lucide-react";
 
 import {
-    Command,
-    CommandEmpty,
-    CommandGroup,
-    CommandInput,
-    CommandItem,
-    CommandList,
-} from "@/components/ui/command"
-import {
     Drawer,
     DrawerContent,
     DrawerTrigger,
@@ -186,7 +178,7 @@ export default function HeadSearch() {
                         className="rounded-full"
                         onClick={randomizePromptAndStyle} // Call the randomize function on click
                     >
-                        <DicesIcon className="h-4 w-4"/>
+                        <DicesIcon className="h-4 w-4" />
                     </Button>
                     <Drawer open={open} onOpenChange={setOpen}>
                         <DrawerTrigger asChild>
@@ -197,29 +189,29 @@ export default function HeadSearch() {
                         <DrawerContent>
                             <DialogTitle className="hidden">Set Style</DialogTitle>
                             <div className="mt-4 border-t">
-                                <Command>
-                                    <CommandInput placeholder="Filter Style..." />
-                                    <CommandList>
-                                        <CommandEmpty>No results found.</CommandEmpty>
-                                        <CommandGroup className="*:flex *:flex-wrap *:*:w-1/6 *:*:max-md:w-1/4 *:*:max-sm:w-1/3 *:gap-0 w-full h-96">
+                                <main>
+                                    <section>
+                                        <h1>No results found.</h1>
+                                        <section className="*:flex *:flex-wrap *:*:w-1/6 *:*:max-md:w-1/4 *:*:max-sm:w-1/3 *:gap-0 w-full h-96">
                                             {statuses.map((status) => (
-                                                <CommandItem
+                                                <Button
                                                     key={status.Style}
                                                     value={status.Style}
-                                                    onSelect={(value) => {
+                                                    onClick={(e) => {
+                                                        const value = (e.target as HTMLButtonElement).value;
                                                         setSelectedStatus(
                                                             statuses.find((priority) => priority.Style === value) || null
-                                                        )
-                                                        setOpen(false)
+                                                        );
+                                                        setOpen(false);
                                                     }}
                                                     className="h-32 w-full"
                                                 >
                                                     {status.Style}
-                                                </CommandItem>
+                                                </Button>
                                             ))}
-                                        </CommandGroup>
-                                    </CommandList>
-                                </Command>
+                                        </section>
+                                    </section>
+                                </main>
                             </div>
                         </DrawerContent>
                     </Drawer>
